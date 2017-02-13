@@ -6,11 +6,6 @@
                 requireBase: false
         });
         $stateProvider
-            /*.state('landing', {
-                url: '/',
-                controller: 'LandingCtrl as landing', 
-                templateUrl: '/pages/index.html'
-            })*/
             .state('home', {
                 url: '/',
                 controller: 'HomeCtrl as home', 
