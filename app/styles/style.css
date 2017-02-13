@@ -1,0 +1,35 @@
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #d0dbed;
+}
+
+.home-menu {
+    background-color: rgba(136,134,160,.4);
+    position: absolute;
+    height: 100%;
+    width: 20%;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 800;
+    
+}
+
+hr {
+    border-color: black;
+    opacity: .15;
+    size: 1px;
+    width: 85%;
+}
+
+.room-lists {
+    margin-top: 1.25rem;
+}
+.rooms {
+    height: 3rem;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
