@@ -6,13 +6,13 @@
                 requireBase: false
         });
         $stateProvider
-            .state('landing', {
+            /*.state('landing', {
                 url: '/',
                 controller: 'LandingCtrl as landing', 
                 templateUrl: '/pages/index.html'
-            })
+            })*/
             .state('home', {
-                url: '/home',
+                url: '/',
                 controller: 'HomeCtrl as home', 
                 templateUrl: '/templates/home.html'
             });

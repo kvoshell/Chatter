@@ -1,1 +1,9 @@
-<h1>Home Page</h1>
+<div class="home-menu">
+    <div class="heading">
+        <h1>Bloc Chat</h1>
+        <hr>
+    </div>
+    <div class="room-lists">
+        <div class="rooms" ng-repeat="room in home.rooms">{{ room.$id }}</div>
+    </div>
+</div>
