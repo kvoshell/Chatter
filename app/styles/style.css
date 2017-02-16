@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Muli', sans-serif;
     background-color: #d0dbed;
@@ -6,6 +7,8 @@ body {
 .home-menu {
     background-color: rgba(136,134,160,.4);
     position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 20%;
 }
@@ -33,3 +36,4 @@ hr {
     font-weight: 400;
     text-align: center;
 }
+

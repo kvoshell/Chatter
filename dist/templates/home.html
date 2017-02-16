@@ -1,9 +1,11 @@
 <div class="home-menu">
     <div class="heading">
         <h1>Bloc Chat</h1>
+        <button class="btn" type="button" ng-click="home.open()">New Room</button>
         <hr>
     </div>
     <div class="room-lists">
-        <div class="rooms" ng-repeat="room in home.rooms">{{ room.$id }}</div>
+        <div class="rooms" ng-repeat="room in home.rooms">{{ room.$value }}</div>
     </div>
 </div>
+
