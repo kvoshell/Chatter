@@ -1,4 +1,5 @@
 (function() {
+
     function HomeCtrl(Room, Message, $uibModal) {
         
         // Public attributes for Room data, array to contain related messages
@@ -13,7 +14,7 @@
             this.activeRoomId = this.rooms[index].$id;
             this.selectMessages = Message.getByRoomId(this.activeRoomId);
         }        
-    }
+        
         // Open a new modal window to create a new room
         this.open = function() {
             var modalInstance = $uibModal.open({
