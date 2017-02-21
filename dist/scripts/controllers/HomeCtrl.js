@@ -13,7 +13,7 @@
             this.activeRoomId = this.rooms[index].$id;
             this.selectMessages = Message.getByRoomId(this.activeRoomId);
         }        
-    }
+    
         // Open a new modal window to create a new room
         this.open = function() {
             var modalInstance = $uibModal.open({
@@ -22,6 +22,8 @@
             });
         }
         
+        
+    }
     angular 
         .module('blocChat')
         .controller('HomeCtrl', ['Room', 'Message', '$uibModal', HomeCtrl]);
