@@ -1,9 +1,27 @@
-<div class="home-menu">
-    <div class="heading">
-        <h1>Bloc Chat</h1>
-        <hr>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 home-menu">
+            <div class="heading">
+                <h1>Bloc Chat</h1>
+                <button class="btn" type="button" ng-click="home.open()">New Room</button>
+                <hr class="left">
+            </div>
+            <div class="col-md-3 room-lists">
+                <div class="rooms" ng-repeat="room in home.rooms track by $index"> 
+                    <a ng-click="home.selectRoom($index)">{{ room.$value }}</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="room-lists">
-        <div class="rooms" ng-repeat="room in home.rooms">{{ room.$id }}</div>
+    <div class="row">
+        <div class="col-md-9 chat-room">
+            <div class="chat-room-heading">
+                <h3>Now Chatting in Room: {{ home.activeRoomValue }}</h3>
+                <hr class="right">
+            </div>
+            <div class="chat-room-chat" ng-repeat="message in home.selectMessages">
+                <p>{{ home.selectMessages[$index].content }}</p>
+            </div>
+        </div>
     </div>
 </div>
