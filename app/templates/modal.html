@@ -1,0 +1,14 @@
+<div class="modal-dialog">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Create a New Room</h3>
+    </div>
+    <div class="modal-body">
+        <form>
+            <input type="text" ng-model="modal.room.name" name="new-room" placeholder="Enter a Room Name"></input>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button name="Create Room" class="btn btn-success btn-modal" ng-click="modal.open()"><i class="fa fa-check fa-lg" aria-hidden="true"></i></button>
+        <button name="Cancel" class="btn btn-danger btn-modal" ng-click="modal.cancel()"><i class="fa fa-ban fa-lg" aria-hidden="true"></i></button>
+    </div>
+</div>

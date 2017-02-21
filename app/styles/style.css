@@ -1,0 +1,70 @@
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #d0dbed;
+    overflow: hidden;
+}
+
+.home-menu {
+    background-color: rgba(136,134,160,.4);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+
+.heading {
+    height: 11%;
+    text-align: center;
+    font-weight: 800;  
+}
+
+hr {
+    border-color: black;
+    opacity: .15;
+    size: 1px;
+    width: 85%;
+}
+
+.left {
+    margin: 7.5%;
+}
+
+.right {
+    margin: 3%;
+}
+
+.room-lists {
+    margin-top: 1.25rem;
+}
+
+.rooms {
+    height: 3rem;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.chat-room {
+    position: absolute;
+    margin-left: 20%;
+    height: 100%;
+    width: 80%;
+}
+
+.chat-room-heading {
+    height: 11%;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.chat-room-chat {
+    height: 4%;
+    margin-left: 3%;
+}
+
+.chat-room-chat p {
+    font-size: 1.25rem;
+}
