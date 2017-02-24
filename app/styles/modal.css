@@ -1,14 +1,22 @@
 
-.modal-dialog {
-    background-color: rgba(230, 238, 245, .7);
-    text-align: center;  
+div {
+    min-width: 0px; 
+    min-height: 0px; 
 }
 
 .modal-header {
-    padding-top: 35px;
+    padding-top: 25px;
+    background-color: rgba(230, 238, 245, .7);
+    text-align: center; 
+    border-bottom: solid 1px;
+}
+
+.modal-body {
+  text-align: center;
 }
 
 .modal-footer {
+    background-color: rgba(230, 238, 245, .7);
     text-align: center;
     border-top: solid 1px;
 }

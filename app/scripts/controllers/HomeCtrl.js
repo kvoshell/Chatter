@@ -1,10 +1,11 @@
 (function() {
-    function HomeCtrl(Room, Message, $uibModal) {
+    function HomeCtrl(Room, Message, $uibModal, $cookies) {
         
         // Public attributes for Room data, array to contain related messages
         this.rooms = Room.all;
         this.activeRoomValue = null;        
         this.activeRoomId = null;
+        this.username = $cookies.get('blocChatCurrentUser');
         this.selectMessages = [];
         
         // Activate current room, assign data to public attributes, retrieve relevant messages 
@@ -22,9 +23,21 @@
             });
         }
         
+        // Retrieve current timestamp, adjust against 24 hour time
+        this.getTime = function() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            
+            if (hours > 12) {hours -= 12;}
+            if (minutes < 10) {minutes = '0' + minutes;}
+            
+            var time = hours + ':' + minutes;
+            return time;
+        };
         
     }
     angular 
         .module('blocChat')
-        .controller('HomeCtrl', ['Room', 'Message', '$uibModal', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', 'Message', '$uibModal', '$cookies', HomeCtrl]);
 })();
