@@ -15,10 +15,10 @@ body {
     height: 100%;
 }
 
-div {
+/*div {
     min-width: 300px; 
     min-height: 300px; 
-}
+}*/
 
 h1 {
   font-size: 3.9vw;
@@ -63,7 +63,7 @@ p {
     text-align: center;
 }
 
-.btn {
+.btn-home {
     margin: 5%;
 }
 
@@ -113,5 +113,5 @@ td {
 
 .time {
     text-align: right;
-}
+}*/
 

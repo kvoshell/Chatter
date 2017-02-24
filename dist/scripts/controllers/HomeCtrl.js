@@ -30,6 +30,7 @@
             var minutes = date.getMinutes();
             
             if (hours > 12) {hours -= 12;}
+            if (minutes < 10) {minutes = '0' + minutes;}
             
             var time = hours + ':' + minutes;
             return time;

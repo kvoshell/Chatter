@@ -11,7 +11,7 @@
                 $uibModalInstance.close();
             }      
         }
-        
+
     }
     
     angular 
