@@ -1,27 +1,36 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3 home-menu">
-            <div class="heading">
-                <h1>Bloc Chat</h1>
-                <button class="btn" type="button" ng-click="home.open()">New Room</button>
-                <hr class="left">
-            </div>
-            <div class="col-md-3 room-lists">
-                <div class="rooms" ng-repeat="room in home.rooms track by $index"> 
-                    <a ng-click="home.selectRoom($index)">{{ room.$value }}</a>
-                </div>
-            </div>
+
+<div class="row top">
+    <div class="stripe col-lg-3 banner">
+        <div class="upper">
+            <h2>Bloc Chat</h2>  
         </div>
+        <div class="lower">
+            <button class="btn btn-success btn-home" type="button" ng-click="home.open()">Create Room</button>
+            <button class="btn btn-danger btn-home" type="button" ng-click="home.delete()">Delete Room</button>
+        </div>  
     </div>
-    <div class="row">
-        <div class="col-md-9 chat-room">
-            <div class="chat-room-heading">
-                <h3>Now Chatting in Room: {{ home.activeRoomValue }}</h3>
-                <hr class="right">
-            </div>
-            <div class="chat-room-chat" ng-repeat="message in home.selectMessages">
-                <p>{{ home.selectMessages[$index].content }}</p>
-            </div>
+    <div class="col-lg-9 banner">
+        <div class="upper">
+            <h3>Hi, {{ home.username }}!</h3>
         </div>
+        <div class="lower">
+            <h3>Now Chatting in: {{ home.activeRoomValue }}</h3>
+        </div>      
     </div>
 </div>
+<div class="row bottom">
+    <div class="stripe col-lg-3 sidebar">
+        <div class="rooms" ng-repeat="room in home.rooms track by $index"> 
+            <a ng-click="home.selectRoom($index)"><h3>{{ room.$value }}</h3></a>
+        </div>
+    </div>
+    <div class="col-lg-9 chat-room">
+        <table class="table table-striped">
+            <tr ng-repeat="message in home.selectMessages">
+                <td class="message"><h3>{{ home.username }}: {{ home.selectMessages[$index].content }}</h3></td>
+                <td class="time"><h3>{{ home.getTime() }}</h3></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
