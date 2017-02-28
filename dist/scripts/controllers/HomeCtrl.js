@@ -26,7 +26,6 @@
                 roomId: this.activeRoomId
             }
             Message.send(this.message);
-            //this.selectMessages.push(this.message);
             this.input = null;
         }
         
