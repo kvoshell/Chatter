@@ -9,7 +9,8 @@
             $cookies.put('blocChatCurrentUser', modal.name);
             if (modal.name !== undefined){
                 $uibModalInstance.close();
-            }      
+            }   
+           
         }
 
     }

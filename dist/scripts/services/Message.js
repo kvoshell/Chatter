@@ -14,6 +14,11 @@
                 var test = $firebaseArray(ref.orderByChild("roomId").equalTo(roomId));
                 console.log(test);
                 return test;
+            }, 
+            send: function (newMessage) {                
+                ref.push(newMessage);
+                console.log(ref);
+                // takes a message object as an argument and submits it to your Firebase server
             }
     };
     }
