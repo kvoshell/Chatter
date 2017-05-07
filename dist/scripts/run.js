@@ -1,6 +1,6 @@
 (function() {
-    function BlocChatCookies($cookies, $uibModal) {
-        var currentUser = $cookies.get('blocChatCurrentUser');
+    function ChatterCookies($cookies, $uibModal) {
+        var currentUser = $cookies.get('ChatterCurrentUser');
         if (!currentUser || currentUser === '') {
             $uibModal.open({
                 templateUrl: '/templates/username.html',
@@ -10,6 +10,6 @@
     }
 
     angular
-        .module('blocChat')
-        .run(['$cookies', '$uibModal', BlocChatCookies]);
+        .module('Chatter')
+        .run(['$cookies', '$uibModal', ChatterCookies]);
  })();
