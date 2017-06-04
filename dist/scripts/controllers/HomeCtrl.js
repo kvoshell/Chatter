@@ -6,6 +6,7 @@
         this.activeRoomValue = null;
         this.activeRoomId = null;
         this.message = {};
+        this.username = $cookies.get('ChatterCurrentUser');
         this.input = undefined;
         this.selectMessages = [];
         console.log(this.username + 'foooo');

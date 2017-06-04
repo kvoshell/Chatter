@@ -3,7 +3,6 @@ html, body {
     height: 100vh;
     width: 100vw;
 }
-
 body {
     font-family: 'Muli', sans-serif;
     background-color: #d0dbed;
@@ -64,7 +63,7 @@ div {
 
 .infobox.room {
     height: 55%;
-    
+
 }
 .upper {
     position: relative;
@@ -98,13 +97,13 @@ a:hover {
     height: 15%;
     padding-top: 5%;
     border-bottom: 0px;
-    
+
 }
 
 .chat-room {
     position: relative;
     height: 100%;
-   
+
     padding: 0;
 }
 
@@ -148,7 +147,7 @@ td {
 
 .btn-send {
     margin: 8%;
-    
+
 }
 
 .textbox {
@@ -169,5 +168,5 @@ td {
 
 .typebar:focus {
     background-color: white;
-    outline: none;   
+    outline: none;
 }
